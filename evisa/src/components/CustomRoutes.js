@@ -27,7 +27,7 @@ if(role=='user'){
 else{
     return(
         <Routes>
-        <Route exact path='/sider' element={<Siderbar/>}/>
+        {/* <Route exact path='/sider' element={<Siderbar/>}/> */}
         <Route exact path='/home' element={<Home/>}/>
         <Route path='/apply' element={<Apply/>}/>
         <Route path='/register' element={<Register/>}/>

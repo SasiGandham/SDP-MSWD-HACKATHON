@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import axios from 'axios';
-import img from '../assests/img2.png'
 export default function Apply() {
  const [status,setStatus] = useState('')
  const [file, setFile] = useState("");
@@ -35,32 +34,32 @@ export default function Apply() {
   }
   return (
     <>
-    <div style={{display:"flex",alignItems:"center",flexDirection:"column",backgroundColor:"#1d97c5"}}>
+    <div style={{display:"flex",alignItems:"center",flexDirection:"column",backgroundColor:"grey"}}>
     <h1 style={{color:"white"}}>Visa Application Form</h1>
     <form action="submit_application.php" method="post" enctype="multipart/form-data" style={{border:"2px solid black",width:"900px",padding:"90px",backgroundColor:"white",color:"black"}}>
     <fieldset style={{padding:"10px"}}>
       <legend>Personal Information:</legend> <br /><br />
-      <label for="fullName">Email:</label><br/>
-      <input type="email" id="email" name="email" required/><br/><br/>
-      <label for="fullName">Full Name:</label><br/>
+      <label for="fullName">Email:</label>
+      <input type="email" id="email" name="email" required/>
+      <label for="fullName">Full Name:</label>
       <input type="text" id="name" name="name" required/><br/><br/>
-      <label for="adharnumber">Aadhaar Number:</label><br/>
+      <label for="adharnumber">Aadhaar Number:</label>
       <input type="number" id="anum" name="anum" required/><br/><br/>
-      <label for="fathername">Father Name :</label><br/>
+      <label for="fathername">Father Name :</label>
       <input type="text" id="fname" name="fname" required/><br/><br/>
-      <label for="mothername">Mother Name:</label><br/>
+      <label for="mothername">Mother Name:</label>
       <input type="text" id="mname" name="mname" required/><br/><br/>
-      <label for="gender">Gender:</label><br/>
+      <label for="gender">Gender:</label>
       <input type="text" id="gender" name="gender" required/><br/><br/>
       
-      <label for="dob">Age:</label><br/>
+      <label for="dob">Age:</label>
       <input type="number" id="age" name="age" required/><br/><br/>
       
       {/* <label for="dob">Date of Birth:</label><br/>
       <input type="date" id="dob" name="dob" required/><br/><br/> */}
-      <label for="passportNumber">Pin code:</label><br/>
+      <label for="passportNumber">Pin code:</label>
       <input type="number" id="pin" name="pin" required/><br/><br/>
-      <label for="address">Address:</label><br/>
+      <label for="address">Address:</label>
       <textarea id="add" name="add" required></textarea><br/><br/>
     </fieldset>
 
@@ -95,8 +94,9 @@ export default function Apply() {
 
     <fieldset style={{padding:"10px"}}>
       <legend>Declaration:</legend>
+      <input type="checkbox" id="declaration" name="declaration" required/>
       <label for="declaration">I hereby declare that the information provided above is true and accurate to the best of my knowledge. I understand that any false information provided may result in the rejection of my visa application.</label><br/>
-      <input type="checkbox" id="declaration" name="declaration" required/><br/><br/>
+      
     </fieldset>
 
 

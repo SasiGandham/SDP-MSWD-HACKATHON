@@ -6,8 +6,8 @@ import React from 'react'
 function Siderbar() {
   return (
     <div>
-        <Sidebar style={{backgroundColor:"black"}}>
-            <Link to='/home' style={{color:"red",fontSize:"20px",padding:"50px"}}>Online E-Visa</Link><br /><br />
+        <Sidebar style={{backgroundColor:"blue"}}>
+            <Link to='/home' style={{fontSize:"20px",padding:"50px"}}>Online E-Visa</Link><br /><br />
   <Menu
     menuItemStyles={{
       button: {

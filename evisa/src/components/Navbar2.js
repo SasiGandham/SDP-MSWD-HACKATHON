@@ -1,5 +1,5 @@
 import React from 'react'
-import gov from '../assests/img11.png'
+import gov from '../assests/img13.png'
 function Navbar2() {
   return (
     <div>
@@ -9,7 +9,7 @@ function Navbar2() {
             <div class="container">
                 <div class="navbar-wrapper"><a href="#" class="navbar-brand w-nav-brand"><img src={gov}
                             loading="lazy" width="66" alt="" /></a>
-                    <div class="text-block">Online E-Visa</div>
+                    <div class="text-block"> E-Visa Management System</div>
                     <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
                         <ul role="list" class="nav-menu-two w-list-unstyled">
                             <li><a href="#" class="nav-link">About us</a></li>

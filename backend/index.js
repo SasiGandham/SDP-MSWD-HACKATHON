@@ -9,7 +9,7 @@ const app = new express()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect('mongodb://localhost:27017/evisa',{ useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://admin1:admin1@cluster0.mhgxpmd.mongodb.net/?retryWrites=true&w=majority')
 
 const db = mongoose.connection;
 

@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { MDBContainer, MDBCol, MDBRow, MDBBtn,MDBIcon, MDBInput, MDBCheckbox} from 'mdb-react-ui-kit';
 import { useNavigate } from 'react-router-dom';
-import pic from '../assests/avatar.png'
+import pic from '../assests/img10.jpg'
 import Navbar2 from './Navbar2';
 // import Role from './Role';
 function Login({store}) {
@@ -21,7 +21,7 @@ function Login({store}) {
             }
             if(res.data=='2')
             {
-              navigate('/sider')
+              navigate('/home')
               store.dispatch({"type": "login","data":{"un":user,"role":"emp"}})
               // ProctectedRoute('emp')
             }

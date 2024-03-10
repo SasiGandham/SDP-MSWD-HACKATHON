@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import Navbar2 from './Navbar2';
-
+import pic from '../assests/employee.png';
 import {  MDBBtn,MDBContainer,MDBRow,MDBCol,MDBCard,MDBCardBody,MDBCardImage,MDBInput,MDBIcon,MDBCheckbox} from 'mdb-react-ui-kit';
 function Register() {
     const navigate = useNavigate();
@@ -59,7 +59,7 @@ function Register() {
       </MDBCol>
 
       <MDBCol md='10' lg='6' className='order-1 order-lg-2 d-flex align-items-center'>
-        <MDBCardImage src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp' fluid/>
+        <MDBCardImage src={pic} fluid/>
       </MDBCol>
 
     </MDBRow>
