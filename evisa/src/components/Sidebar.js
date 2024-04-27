@@ -2,12 +2,13 @@ import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import { Link } from 'react-router-dom';
 
 import React from 'react'
+import Home from './Home';
 
 function Siderbar() {
   return (
     <div>
-        <Sidebar style={{backgroundColor:"blue"}}>
-            <Link to='/home' style={{fontSize:"20px",padding:"50px"}}>Online E-Visa</Link><br /><br />
+        <Sidebar style={{backgroundColor:"black"}}>
+            <Link to='/home' style={{color:"red",fontSize:"20px",padding:"50px"}}>Online E-Visa</Link><br /><br />
   <Menu
     menuItemStyles={{
       button: {
@@ -28,7 +29,7 @@ function Siderbar() {
     <MenuItem component={<Link to="/accepted" />}> Accepted Visa's</MenuItem>
   </Menu>
 </Sidebar>;
-
+<Home/>
     </div>
   )
 }

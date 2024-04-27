@@ -4812,36 +4812,18 @@ blockquote {
   .cart-item {
     flex-direction: row;
   }
+}
 
-  .brand {
-    width: 100px;
-  }
+#w-node-_2df555e3-597c-6855-5962-d6e86a0fe40a-68ca730e, #w-node-_2df555e3-597c-6855-5962-d6e86a0fe414-68ca730e, #w-node-_2df555e3-597c-6855-5962-d6e86a0fe41e-68ca730e, #w-node-db5077cf-bbdc-aac5-35d6-71d12849860a-68ca730e, #w-node-_56a545e3-4466-d6f1-9620-a33dbc98c7e0-68ca730e, #w-node-b13df095-66fc-287a-5412-55b1ac898e7e-68ca730e, #w-node-b13df095-66fc-287a-5412-55b1ac898e89-68ca730e, #w-node-b13df095-66fc-287a-5412-55b1ac898e93-68ca730e {
+  grid-area: span 1 /span 1/span 1/span 1;
+}
 
-  .brand.w--current {
-    width: 90px;
+@media screen and (min-width: 1440px) {
+  #w-node-b13df095-66fc-287a-5412-55b1ac898e89-68ca730e, #w-node-b13df095-66fc-287a-5412-55b1ac898e93-68ca730e {
+    grid-area: span 1/span 1/span 1 /span 1;
   }
+}
 
-  .cart-menu {
-    margin-right: 10px;
-  }
-
-  .utility-page-wrap {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .order-item-checkoiut {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 45px;
-  }
-
-  .order-item-details {
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    display: flex;
-  }
+#date-container{
+  display: none;
 }

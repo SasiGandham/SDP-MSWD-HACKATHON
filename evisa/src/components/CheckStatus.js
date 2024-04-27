@@ -25,10 +25,9 @@ function CheckStatus() {
     <body className="statusbody">
     <div >
       <h1>Check Status of application</h1>
-      <label className="label1" htmlFor="applyid">Enter Application id </label><br/>
-      <input className="input1" type="text" id='aid'/><br/>
-      <button className="button1"onClick={handleSearch}>Search</button><br/>
-      <h2 >{status}</h2>
+      <label htmlFor="applyid">Enter Application id </label>
+      <input type="text" id='aid'/>
+      <button onClick={handleSearch}>Search</button>
     </div>
     </body>
   )
